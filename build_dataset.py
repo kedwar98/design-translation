@@ -17,7 +17,7 @@ print ("The current working directory is %s" % path)
 
 
 #define new path of the directory to be created
-new_path="/home/gauss/Kristen/design_translation/airplane_images"
+new_path="/home/turing/design-translation/airplane-images"
 try:
     os.mkdir(new_path)
 except OSError:
@@ -29,7 +29,7 @@ else:
 airplane_synset='02691156'
  
 #file path before it gets to airplane sysnet ID
-file_path= "/home/gauss/Downloads/ShapeNetCore.v2/{}/".format(airplane_synset)
+file_path= "/home/turing/Downloads/ShapeNetCore.v2/{}/".format(airplane_synset)
 
 #model_dirs is a list of all of the model directories
 model_dirs = [join(file_path, f) for f in listdir(file_path) if isdir(join(file_path, f))]
